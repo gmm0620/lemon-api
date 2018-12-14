@@ -2,7 +2,7 @@
  * @Author: 郭敏敏 
  * @Date: 2018-12-07 18:20:31 
  * @Last Modified by: 郭敏敏
- * @Last Modified time: 2018-12-07 20:12:29
+ * @Last Modified time: 2018-12-12 09:33:18
  */
 
 var mysql = require('mysql');
@@ -30,7 +30,7 @@ module.exports = function(sql, query, fn) {
 
     })
 
-    function ck(err, results) {
+    function ck(error, results) {
         if (error) {
             fn(error);
         } else {

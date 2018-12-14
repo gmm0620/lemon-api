@@ -1,11 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-var query = require('../mysql');
-var sql = require('../mysql/sql');
-/* GET users listing. */
+/* GET home page. */
 router.get('/', function(req, res, next) {
-    res.send('respond with a resource');
+    res.render('index', { title: 'Express' });
 });
 
 module.exports = router;
